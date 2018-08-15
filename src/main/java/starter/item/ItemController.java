@@ -11,7 +11,7 @@ public class ItemController {
     @Autowired
     private ItemService itemService;
 
-    @RequestMapping(value="/items/add-new-item", method=RequestMethod.POST)
+    @RequestMapping(value = "/items/add-new-item", method=RequestMethod.POST)
     public void addItem(@RequestBody Item item){
         this.itemService.addItem(item);
         System.out.println("works");
