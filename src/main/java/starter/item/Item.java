@@ -10,14 +10,14 @@ import javax.persistence.Id;
 public class Item {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String item_no;
     private String name;
     private int amount;
     private String inventory_code;
 
-    public Item(String name, int amount, String inventory_code) {
+    public Item(String item_no, String name, int amount, String inventory_code) {
         super();
+        this.item_no = item_no;
         this.name = name;
         this.amount = amount;
         this.inventory_code = inventory_code;

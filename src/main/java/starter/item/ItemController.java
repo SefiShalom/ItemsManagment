@@ -43,5 +43,4 @@ public class ItemController {
     public void deleteItem(@RequestBody Item item){
         this.itemService.deleteItem(item);
     }
-
 }
