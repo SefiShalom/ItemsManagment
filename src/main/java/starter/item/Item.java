@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Item {
 
     @Id
-    private String item_no;
+    private int item_no;
     private String name;
     private int amount;
     private String inventory_code;
